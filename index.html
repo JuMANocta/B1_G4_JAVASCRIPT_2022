@@ -18,10 +18,30 @@
     <label><input type="radio" name="check" value="4"/>Case n°4</label><br>
     <br>
     <input type="button" value="Afficher la case cochée" onclick="check();"/>
-
-
-
-
+    <br>
+    <br>
+    <!-- créer une liste contenant masculin feminin et afficher dans la console le choix du client -->
+    <select id="genre">
+        <option>Sélectionner votre genre :</option>
+        <option value="masculin">Masculin</option>
+        <option value="feminin">Feminin</option>
+    </select>
+    <br>
+    <br>
+    <!-- Récupérer les boutons et agir selon, si submit alors information d'envoie du formulaire et si reset alors retour d'information et supprésion du texte -->
+    <form id="monFormulaire">
+        <input type="text" value="Entrer un texte"/>
+        <br><br>
+        <input type="submit" value="Envoyer"/>
+        <input type="reset" value="Annuler"/>
+    </form>
+    <br>
+    <br>
+    <button id="monTimer">Annuler le compte à rebours</button>
+    <br>
+    <br>
+    <img src="flipper.png" alt="flipper" id="flipper" style="opacity:1">
     <script src="dom.js"></script>
+    <script src="timer.js"></script>
 </body>
 </html>
